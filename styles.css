@@ -1,0 +1,33 @@
+*{
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.header {
+    max-height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+}
+
+.mission {
+    display: inline-flex;
+}
+
+.mission-pic {
+    max-height: 700px;
+    max-width: 1200px;
+}
+
+
+.nav {
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    text-align: left;
+}
