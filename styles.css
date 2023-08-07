@@ -21,11 +21,18 @@
     max-width: 1200px;
 }
 
-
-.nav {
+.nav ul{
     text-decoration: underline;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
+}
+
+.nav p{
+    margin: auto 10px;
+}
+
+.monthly {
+    text-align: center;
 }
 
 .footer {
