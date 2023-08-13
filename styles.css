@@ -13,7 +13,7 @@ h2 {
     font-size: 1.5em;
 }
 
-.header {
+.header { /*Below is how to do a fixed header*/
     display: flex;
     position: fixed;
     top: 0;
@@ -44,17 +44,14 @@ h2 {
 }
 
 .mission {
-    display: inline;
+    background-image: url(images/img-mission-background.jpg);
+    display: flex;
+    margin: auto;
     flex-direction: column;
     position:relative;
     padding: auto;
     width: 1200px;
     height: 700px;
-}
-
-.mission img {
-    margin: auto;
-    display: block;
 }
 
 .mission-words {
@@ -70,16 +67,99 @@ h2 {
     width: 1200px;
 }
 
-.monthly{
+.monthly {
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+.monthly-header{
+    margin-top: 70px;
+    margin-bottom: 0;
     text-align: center;
 }
 
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.items p {
+    margin: 10px;
+}
+
+.box{
+    height: 200px;
+    width: 300px;
+    padding: 10px 15px 0px 15px;
+}
+
+.location {
+    background-image: url(images/img-locations-background.jpg);
+    background-position: top;
+    display: flex;
+    margin: 70px auto;
+    flex-direction: column;
+    position: relative;
+    width: 1200px;
+    height: 575px;
+    text-align: center;
+}
+
+.location h2 {
+    display: inline;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+
+.spots {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    margin-top: 10px;
+}
+
+.address {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: 20px;
+    align-content: stretch;
+}
+
+.address h3 {
+    font-size: 1.2rem;
+}
+
 .contact {
+    margin: 0px auto;
     text-align: center;
     height: 200px;
+}
+
+.contact h1{
+    font-size: 1.5rem;
+}
+
+.contact h5 {
+    font-size: 0.8rem;
+}
+
+.contact p{
+    font-size: 0.8rem;
 }
 
 .footer {
     text-align: left;
     margin-top: 20px;
+    font-size: 0.8rem;
 }
