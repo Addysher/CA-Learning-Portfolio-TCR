@@ -3,38 +3,83 @@
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
+}
+
+body {
+    margin-top: 69px;
+}
+
+h2 {
+    font-size: 1.5em;
 }
 
 .header {
-    max-height: 69px;
-    border-bottom: 1px solid seashell;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+.header .main-title p{
+    font-family: Snell Roundhand, cursive;
+    font-size: 50px;
+    margin: auto;
+}
+
+.header .nav{
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: 2%;
+    float: right;
+}
+
+.header .nav ul {
+    display: flex;
+    max-height: 69px;
+    margin: auto;
+    gap: 40px;
 }
 
 .mission {
-    display: inline-flex;
+    display: inline;
+    flex-direction: column;
+    position:relative;
+    padding: auto;
+    width: 1200px;
+    height: 700px;
 }
 
-.mission-pic {
-    max-height: 700px;
-    max-width: 1200px;
+.mission img {
+    margin: auto;
+    display: block;
 }
 
-.nav ul{
-    text-decoration: underline;
-    display: flex;
-    justify-content: right;
+.mission-words {
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.nav p{
-    margin: auto 10px;
-}
-
-.monthly {
+.mission-words h2, h4{
     text-align: center;
+    width: 1200px;
+}
+
+.monthly{
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    height: 200px;
 }
 
 .footer {
     text-align: left;
+    margin-top: 20px;
 }
